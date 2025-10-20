@@ -1,5 +1,4 @@
-# immich-container
+# Installation
 
-# Immich container install. 
+Follow instructions from https://docs.immich.app/install/docker-compose
 
-Follow instructions from [Immich docker install](https://immich.app/docs/install/docker-compose/).
