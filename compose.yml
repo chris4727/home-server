@@ -21,6 +21,8 @@ services:
       # Do not edit the next line. If you want to change the media storage location on your system, edit the value of UPLOAD_LOCATION in the .env file
       - ${UPLOAD_LOCATION}:/data
       - /etc/localtime:/etc/localtime:ro
+      # Adding a custom path to drop photos to upload:
+      - ${MEDIA_INBOX}:/files/media:ro
     env_file:
       - .env
     ports:
