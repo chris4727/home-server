@@ -30,7 +30,7 @@ services:
     depends_on:
       - redis
       - database
-    restart: unless-stopped
+    restart: no
     healthcheck:
       disable: false
 
