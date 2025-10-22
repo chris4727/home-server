@@ -7,11 +7,13 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Etc/UTC
+      - TZ=${TZ}
     volumes:
-      - /path/to/syncthing/config:/config
-      - /path/to/data1:/data1
-      - /path/to/data2:/data2
+      - ./config:/config
+      #- ${ANDROID}:/android
+      #- ${DOCUMENTS}:/documents
+      #- ${MUSIC}:/music
+      - ${PICTURES}:/pictures
     env_file:
       - .env
     ports:

@@ -1,0 +1,7 @@
+# Volumes that will be synced:
+ANDROID=/path/to/android-backup
+DOCUMENTS=/path/to/DOCUMENTS
+MUSIC=/path/to/Music
+PICTURES=/path/Pictures
+
+TZ=Etc/UTC
